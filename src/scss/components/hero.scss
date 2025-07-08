@@ -1,0 +1,42 @@
+.hero-section {
+  padding-top: 196px;
+  padding-bottom: 220px;
+  background-image: url(../img/hero/hero-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 88px center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 228px;
+    padding-bottom: 389px;
+    background-image: url(../img/hero/hero-bg-desk.png);
+    background-position: top 170px center;
+  }
+}
+
+.hero-title-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+.hero-btn-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

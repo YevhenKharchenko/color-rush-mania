@@ -1,0 +1,145 @@
+.choose-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include media(desktop) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.choose-container {
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 72px;
+  }
+}
+
+.choose-section-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.choose-swiper-container {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.choose-swiper-container.show {
+  visibility: visible;
+}
+
+.choose-slide {
+  background: linear-gradient(180deg, #4e3cc7 0%, #299af5 100%);
+  border-radius: 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  max-width: 335px;
+  min-height: 144px;
+
+  @include media(desktop) {
+    flex-direction: column;
+    padding: 16px;
+    max-width: 416px;
+    min-height: 242px;
+  }
+}
+
+.choose-bottom-slide {
+  @include media(desktop) {
+    max-width: 636px;
+  }
+}
+
+.choose-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  padding: 0 24px;
+
+  @include media(desktop) {
+    padding: 24px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    gap: 33px;
+  }
+}
+
+.choose-controls {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.arrow-btn {
+  background: #c31162;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c31162;
+  border-radius: 100px;
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    width: 44px;
+    height: 44px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.choose-list-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+}

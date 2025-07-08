@@ -1,0 +1,100 @@
+.reviews-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include media(desktop) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.reviews-container {
+  padding: 0;
+}
+
+.reviews-section-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.reviews-title-wrapper {
+  margin-bottom: 74px;
+
+  @include media(desktop) {
+    margin-bottom: 107px;
+  }
+}
+
+.reviews-swiper-container {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.reviews-swiper-container.show {
+  visibility: visible;
+}
+
+.reviews-slide {
+  background: linear-gradient(180deg, #4e3cc7 0%, #299af5 100%);
+  border-radius: 10px;
+  padding: 66px 16px 24px 16px;
+  max-width: 335px;
+  min-height: 164px;
+  position: relative;
+
+  @include media(desktop) {
+    padding: 64px 16px 24px 16px;
+    max-width: 416px;
+    min-height: 188px;
+  }
+}
+
+.reviews-img {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include media(desktop) {
+    top: -70px;
+  }
+}
+
+.reviews-name {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+.reviews-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}

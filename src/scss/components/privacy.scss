@@ -1,0 +1,68 @@
+.policy-section {
+  padding-top: 76px;
+  padding-bottom: 32px;
+
+  @include media(desktop) {
+    padding-top: 122px;
+    padding-bottom: 90px;
+  }
+}
+
+.policy-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #1e1e1e;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 36px;
+  }
+}
+
+.policy-subtitle {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1e1e1e;
+  margin-bottom: 1em;
+
+  @include media(desktop) {
+    font-size: 36px;
+  }
+}
+
+.policy-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1e1e1e;
+
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.policy-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  word-wrap: break-word;
+}
+
+.support-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  word-wrap: break-word;
+}
+
+.policy-span {
+  font-weight: 500;
+}

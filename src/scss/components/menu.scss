@@ -1,0 +1,83 @@
+.context-menu {
+  box-shadow: -6px 8px 4px 0 rgba(16, 0, 78, 0.25);
+  background: #c31162;
+  border-radius: 30px 0 0 30px;
+  padding: 12px 16px 16px 22px;
+  max-width: 264px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  height: 100%;
+  max-height: 472px;
+  overflow-y: auto;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.close-btn {
+  display: none;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-bottom: 52px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.context-nav {
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+}
+
+.context-list-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+  }
+}
+
+.is-open {
+  display: block;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
