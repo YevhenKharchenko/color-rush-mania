@@ -1,5 +1,5 @@
 .header {
-  background: #c31162;
+  background: linear-gradient(180deg, #0f8 0%, #00c96b 100%);
   padding-top: 10px;
   padding-bottom: 10px;
   position: fixed;
@@ -14,9 +14,6 @@
 }
 
 .header-container {
-  @include media(desktop) {
-    padding: 0 24px;
-  }
 }
 
 .nav {
@@ -26,7 +23,7 @@
 
   @include media(desktop) {
     justify-content: start;
-    gap: 52px;
+    gap: 86px;
   }
 }
 
@@ -50,7 +47,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
+  color: #1e1e1e;
   transition: all 0.3s ease-in-out;
 
   &:hover,

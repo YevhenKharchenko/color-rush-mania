@@ -1,9 +1,11 @@
 .footer {
-  background: #010492;
+  background: linear-gradient(180deg, #0f8 0%, #00c96b 100%);
   padding-top: 24px;
   padding-bottom: 16px;
 
   @include media(desktop) {
+    padding-top: 32px;
+    padding-bottom: 24px;
   }
 }
 
@@ -45,7 +47,7 @@
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    color: #fff;
+    color: #1e1e1e;
   }
 }
 
@@ -55,11 +57,10 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
+  color: #1e1e1e;
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    font-size: 18px;
   }
 
   &:hover,
@@ -73,9 +74,8 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
+  color: #1e1e1e;
 
   @include media(desktop) {
-    font-size: 20px;
   }
 }
