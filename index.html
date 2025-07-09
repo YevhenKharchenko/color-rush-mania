@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="Color Rush Mania – Vibrant Mobile Puzzle Game"
+    />
+    <meta
+      name="description"
+      content="Play Color Rush Mania – a fun, fast-paced color puzzle game for mobile. Match colors, unlock paths, use skills and beat tricky levels! Free on Google Play."
+    />
+    <meta
+      name="keywords"
+      content="color rush, mobile puzzle game, color matching, ball sorting game, Android logic puzzle, casual games, brain game, free game, Google Play"
+    />
+    <meta name="author" content="Aden Games" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blogxu.online/" />
+    <meta
+      property="og:title"
+      content="Color Rush Mania – Vibrant Mobile Puzzle Game"
+    />
+    <meta
+      property="og:description"
+      content="Enjoy colorful puzzles and creative logic gameplay in Color Rush Mania!"
+    />
+    <meta
+      property="og:image"
+      content="https://blogxu.online/assets/preview.jpg"
+    />
+    <link rel="icon" type="image/png" href="/color-rush-mania/favicon.png" />
+    <title>Color Rush Mania – Vibrant Mobile Puzzle Game</title>
+    
+    <script type="module" crossorigin src="/color-rush-mania/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/color-rush-mania/assets/vendor-74664e07.js">
+    <link rel="stylesheet" href="/color-rush-mania/assets/vendor-fef9b9da.css">
+    <link rel="stylesheet" href="/color-rush-mania/assets/styles-ce8a02e3.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <picture>
+          <source
+            srcset="/color-rush-mania/assets/header-logo-desk-2a6a6c7f.png "
+            media="(min-width: 1440px)"
+            width="48"
+            height="48"
+          />
+          <source
+            srcset="/color-rush-mania/assets/header-logo-mob-907c603f.png "
+            width="36"
+            height="36"
+          />
+          <img
+            class="header-logo-img"
+            src="/color-rush-mania/assets/header-logo-mob-907c603f.png"
+            alt="Logo"
+            width="36"
+            height="36"
+          />
+        </picture>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">About the Game</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery">Gallery</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#play">How to Play</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#skills"
+            >Skills and Power-ups</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#features"
+            >Game Features</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="32" height="32">
+          <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <button class="close-btn" type="button" aria-label="Close mobile menu">
+    <svg class="close-icon" width="32" height="32">
+      <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#home">Home</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#about"
+          >About the Game</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gallery">Gallery</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#play">How to Play</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#skills"
+          >Skills and Power-ups</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#features"
+          >Game Features</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#faq">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-wrapper">
+    <div class="container hero-container">
+      <picture>
+        <source
+          srcset="/color-rush-mania/assets/hero-title-desk-b9867db4.png "
+          media="(min-width: 1440px)"
+          width="375"
+          height="151"
+        />
+        <source
+          srcset="/color-rush-mania/assets/hero-title-mob-f8ffea72.png "
+          width="251"
+          height="101"
+        />
+        <img
+          class="hero-title-img"
+          src="/color-rush-mania/assets/hero-title-mob-f8ffea72.png"
+          alt="Title"
+          width="251"
+          height="101"
+        />
+      </picture>
+      <p class="hero-subtitle">Unleash the Color. Solve the Rush.</p>
+      <p class="hero-text">
+        Dive into a fast-paced puzzle adventure where color, logic, and speed
+        collide!
+      </p>
+      <div class="hero-btn-wrapper">
+        <a
+          class="hero-btn"
+          href="#download"
+          rel="noopener noreferrer"
+          title="Download the game Color Rush Mania on Google Play"
+          aria-label="Download the game Color Rush Mania on Google Play"
+        >
+          <picture>
+            <source
+              srcset="/color-rush-mania/assets/hero-download-desk-e280ceaf.png "
+              media="(min-width: 1440px)"
+              width="221"
+              height="68"
+            />
+            <source
+              srcset="/color-rush-mania/assets/hero-download-mob-9e3c9923.png "
+              width="171"
+              height="52"
+            />
+            <img
+              class="hero-google-play-img"
+              src="/color-rush-mania/assets/hero-download-mob-9e3c9923.png"
+              alt="Google Play button"
+              width="171"
+              height="52"
+            />
+          </picture>
+        </a>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="/color-rush-mania/assets/hero-bg-desk-5bcdc721.png "
+        media="(min-width: 1440px)"
+      />
+      <source srcset="/color-rush-mania/assets/hero-bg-mob-66088c2b.png " />
+      <img
+        class="hero-bg-img"
+        src="/color-rush-mania/assets/hero-bg-mob-66088c2b.png"
+        alt="Color balls"
+      />
+    </picture>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="container about-container">
+    <div class="section-bg-wrapper about-bg-wrapper">
+      <h2 class="section-title about-title">About the Game</h2>
+      <p class="about-text">
+        Color Rush Mania is a vibrant and addictive puzzle game that challenges
+        your logic, speed, and creativity. Move colorful boxes through matching
+        gates, fill them with balls, and pack them into the dock before it
+        overflows! Use special skills like Sort and Rainbow Gate to stay ahead,
+        unlock new challenges with keys, and beat the ticking Ice timer.
+      </p>
+      <p class="about-text">
+        Whether you're a strategic mastermind or a casual puzzle fan, Color Rush
+        Mania brings fast-paced fun, brain-teasing levels, and a splash of color
+        to every move.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="section gallery-section" id="gallery">
+  <div class="container gallery-container">
+    <div class="section-bg-wrapper gallery-bg-wrapper">
+      <h2 class="section-title gallery-title">Gallery</h2>
+      <div class="gallery-bg-container">
+        <div class="gallery-swiper-container">
+          <ul class="swiper-wrapper gallery-swiper-wrapper">
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img1-desk-6230a68e.png "
+                  media="(min-width: 1440px)"
+                  width="345"
+                  height="613"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img1-mob-8307b3c6.png "
+                  width="230"
+                  height="409"
+                />
+                <img
+                  class="gallery-title-img"
+                  src="/color-rush-mania/assets/gallery-img1-mob-8307b3c6.png"
+                  alt="Screenshot of the game"
+                  width="230"
+                  height="409"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img2-desk-e375ff64.png "
+                  media="(min-width: 1440px)"
+                  width="345"
+                  height="613"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img2-mob-8770b43b.png "
+                  width="230"
+                  height="409"
+                />
+                <img
+                  class="gallery-title-img"
+                  src="/color-rush-mania/assets/gallery-img2-mob-8770b43b.png"
+                  alt="Screenshot of the game"
+                  width="230"
+                  height="409"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img3-desk-e8803b38.png "
+                  media="(min-width: 1440px)"
+                  width="345"
+                  height="613"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img3-mob-a9e904e1.png "
+                  width="230"
+                  height="409"
+                />
+                <img
+                  class="gallery-title-img"
+                  src="/color-rush-mania/assets/gallery-img3-mob-a9e904e1.png"
+                  alt="Screenshot of the game"
+                  width="230"
+                  height="409"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img4-desk-3585f9a6.png "
+                  media="(min-width: 1440px)"
+                  width="345"
+                  height="613"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img4-mob-1a4f0881.png "
+                  width="230"
+                  height="409"
+                />
+                <img
+                  class="gallery-title-img"
+                  src="/color-rush-mania/assets/gallery-img4-mob-1a4f0881.png"
+                  alt="Screenshot of the game"
+                  width="230"
+                  height="409"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img5-desk-56dfd055.png "
+                  media="(min-width: 1440px)"
+                  width="345"
+                  height="613"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img5-mob-a0c95aa1.png "
+                  width="230"
+                  height="409"
+                />
+                <img
+                  class="gallery-title-img"
+                  src="/color-rush-mania/assets/gallery-img5-mob-a0c95aa1.png"
+                  alt="Screenshot of the game"
+                  width="230"
+                  height="409"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img6-desk-ec971ffb.png "
+                  media="(min-width: 1440px)"
+                  width="345"
+                  height="613"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img6-mob-4bab1b36.png "
+                  width="230"
+                  height="409"
+                />
+                <img
+                  class="gallery-title-img"
+                  src="/color-rush-mania/assets/gallery-img6-mob-4bab1b36.png"
+                  alt="Screenshot of the game"
+                  width="230"
+                  height="409"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img7-desk-8449b3c8.png "
+                  media="(min-width: 1440px)"
+                  width="345"
+                  height="613"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img7-mob-e546791e.png "
+                  width="230"
+                  height="409"
+                />
+                <img
+                  class="gallery-title-img"
+                  src="/color-rush-mania/assets/gallery-img7-mob-e546791e.png"
+                  alt="Screenshot of the game"
+                  width="230"
+                  height="409"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img8-desk-c07ad327.png "
+                  media="(min-width: 1440px)"
+                  width="345"
+                  height="613"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/gallery-img8-mob-129e6fdd.png "
+                  width="230"
+                  height="409"
+                />
+                <img
+                  class="gallery-title-img"
+                  src="/color-rush-mania/assets/gallery-img8-mob-129e6fdd.png"
+                  alt="Screenshot of the game"
+                  width="230"
+                  height="409"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <div class="controls gallery-controls">
+          <button
+            class="arrow-btn"
+            id="galleryLeftArrow"
+            aria-label="Previous slide"
+          >
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-left-arrow"></use>
+            </svg>
+          </button>
+          <button
+            class="arrow-btn"
+            id="galleryRightArrow"
+            aria-label="Next slide"
+          >
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section play-section" id="play">
+  <div class="container play-container">
+    <div class="section-bg-wrapper play-bg-wrapper">
+      <h2 class="section-title play-title">How to Play</h2>
+      <div class="play-list-wrapper">
+        <ul class="play-list">
+          <li class="play-list-item">
+            <span class="play-item-number">1</span>
+            <p class="play-item-text">
+              Move boxes in the direction shown by the arrow.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <span class="play-item-number">2</span>
+            <p class="play-item-text">
+              Match box and gate colors to pass through.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <span class="play-item-number">3</span>
+            <p class="play-item-text">
+              Fill boxes with colored balls before sending them to the dock.
+            </p>
+          </li>
+        </ul>
+        <picture>
+          <source
+            srcset="/color-rush-mania/assets/play-img-desk-acf5f464.png "
+            media="(min-width: 1440px)"
+            width="256"
+            height="383"
+          />
+          <source
+            srcset="/color-rush-mania/assets/play-img-mob-0ff23d13.png "
+            width="75"
+            height="112"
+          />
+          <img
+            class="gallery-img"
+            src="/color-rush-mania/assets/play-img-mob-0ff23d13.png"
+            alt="Puzzle"
+            width="75"
+            height="112"
+            loading="lazy"
+          />
+        </picture>
+        <ul class="play-list">
+          <li class="play-list-item">
+            <span class="play-item-number">4</span>
+            <p class="play-item-text">
+              Keep an eye on the Ice timer — it will shatter when it hits zero!
+            </p>
+          </li>
+          <li class="play-list-item">
+            <span class="play-item-number">5</span>
+            <p class="play-item-text">
+              Collect matching keys to unlock locked boxes.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <span class="play-item-number">6</span>
+            <p class="play-item-text">
+              Use skills like “Sort” and “Rainbow Gate” to solve tricky
+              situations.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section skills-section" id="skills">
+  <div class="container skills-container">
+    <div class="section-bg-wrapper skills-bg-wrapper">
+      <h2 class="section-title skills-title">Skills and Power-ups</h2>
+      <div class="skills-bg-container">
+        <div class="skills-swiper-container">
+          <ul class="swiper-wrapper skills-swiper-wrapper">
+            <li class="swiper-slide skills-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/skills-img1-desk-5843fba3.png "
+                  media="(min-width: 1440px)"
+                  width="120"
+                  height="128"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/skills-img1-mob-0d45be9a.png "
+                  width="100"
+                  height="106"
+                />
+                <img
+                  class="skills-title-img"
+                  src="/color-rush-mania/assets/skills-img1-mob-0d45be9a.png"
+                  alt="Screenshot of the game"
+                  width="100"
+                  height="106"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="skills-text">Use "Sort" to clear the dock area.</p>
+            </li>
+            <li class="swiper-slide skills-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/skills-img2-desk-48ec8938.png "
+                  media="(min-width: 1440px)"
+                  width="120"
+                  height="128"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/skills-img2-mob-15926c62.png "
+                  width="100"
+                  height="106"
+                />
+                <img
+                  class="skills-title-img"
+                  src="/color-rush-mania/assets/skills-img2-mob-15926c62.png"
+                  alt="Screenshot of the game"
+                  width="100"
+                  height="106"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="skills-text">"Rainbow Gate" sends stuck boxes away.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="controls skills-controls">
+          <button
+            class="arrow-btn"
+            id="skillsLeftArrow"
+            aria-label="Previous slide"
+          >
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-left-arrow"></use>
+            </svg>
+          </button>
+          <button
+            class="arrow-btn"
+            id="skillsRightArrow"
+            aria-label="Next slide"
+          >
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section features-section" id="features">
+  <div class="container features-container">
+    <div class="section-bg-wrapper features-bg-wrapper">
+      <h2 class="section-title features-title">Game Features</h2>
+      <div class="features-bg-container">
+        <div class="features-swiper-container">
+          <ul class="swiper-wrapper features-swiper-wrapper">
+            <li class="swiper-slide features-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/features-img1-desk-ffb2ef16.png "
+                  media="(min-width: 1440px)"
+                  width="109"
+                  height="128"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/features-img1-mob-e9339dde.png "
+                  width="98"
+                  height="115"
+                />
+                <img
+                  class="features-title-img"
+                  src="/color-rush-mania/assets/features-img1-mob-e9339dde.png"
+                  alt="Screenshot of the game"
+                  width="98"
+                  height="115"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="features-text">Creative color-based puzzle logic</p>
+            </li>
+            <li class="swiper-slide features-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/features-img2-desk-f42cda92.png "
+                  media="(min-width: 1440px)"
+                  width="77"
+                  height="128"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/features-img2-mob-66df3867.png "
+                  width="69"
+                  height="115"
+                />
+                <img
+                  class="features-title-img"
+                  src="/color-rush-mania/assets/features-img2-mob-66df3867.png"
+                  alt="Screenshot of the game"
+                  width="69"
+                  height="115"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="features-text">Unlock and move complex blocks</p>
+            </li>
+            <li class="swiper-slide features-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/features-img3-desk-d34f2338.png "
+                  media="(min-width: 1440px)"
+                  width="104"
+                  height="128"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/features-img3-mob-55cf83d0.png "
+                  width="93"
+                  height="115"
+                />
+                <img
+                  class="features-title-img"
+                  src="/color-rush-mania/assets/features-img3-mob-55cf83d0.png"
+                  alt="Screenshot of the game"
+                  width="93"
+                  height="115"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="features-text">Smooth, colorful gameplay</p>
+            </li>
+            <li class="swiper-slide features-slide">
+              <picture>
+                <source
+                  srcset="/color-rush-mania/assets/features-img4-desk-c757c7dc.png "
+                  media="(min-width: 1440px)"
+                  width="85"
+                  height="128"
+                />
+                <source
+                  srcset="/color-rush-mania/assets/features-img4-mob-256d8a9f.png "
+                  width="77"
+                  height="115"
+                />
+                <img
+                  class="features-title-img"
+                  src="/color-rush-mania/assets/features-img4-mob-256d8a9f.png"
+                  alt="Screenshot of the game"
+                  width="77"
+                  height="115"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="features-text">Optimized for all mobile devices</p>
+            </li>
+          </ul>
+        </div>
+        <div class="controls features-controls">
+          <button
+            class="arrow-btn"
+            id="featuresLeftArrow"
+            aria-label="Previous slide"
+          >
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-left-arrow"></use>
+            </svg>
+          </button>
+          <button
+            class="arrow-btn"
+            id="featuresRightArrow"
+            aria-label="Next slide"
+          >
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="container faq-container">
+    <div class="section-bg-wrapper faq-bg-wrapper">
+      <h2 class="section-title faq-title">FAQ</h2>
+      <ul class="faq-list">
+        <li class="faq-list-item">
+          <div class="faq-item-top-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >Is Color Rush Mania free to play?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-bottom-wrapper">
+            <p class="faq-bottom-text">
+              Yes! The game is completely free. Optional in-app purchases are
+              available for faster progression or cosmetics.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-top-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >Do I need an internet connection?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-bottom-wrapper">
+            <p class="faq-bottom-text">
+              No, you can play offline. However, internet is needed to save
+              progress to the cloud or make purchases.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-top-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">How do I unlock new levels?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-bottom-wrapper">
+            <p class="faq-bottom-text">
+              Finish current puzzle stages. New levels unlock as you complete
+              them in sequence.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-top-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >What are the “Sort” and “Rainbow Gate” skills?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-bottom-wrapper">
+            <p class="faq-bottom-text">
+              "Sort" clears space in the dock. "Rainbow Gate" helps remove stuck
+              boxes regardless of color.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-top-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >Why did I lose the level even though I filled boxes?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-bottom-wrapper">
+            <p class="faq-bottom-text">
+              If the dock is full and a box doesn’t fit, you lose. Use Sort
+              skill or pack boxes more efficiently.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-top-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Can I play on multiple devices?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-bottom-wrapper">
+            <p class="faq-bottom-text">
+              Yes! If you're signed in with Google Play Games, your progress
+              syncs across devices.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section download-section" id="download">
+  <div class="container download-container">
+    <div class="download-wrapper">
+      <div class="download-content-wrapper">
+        <h2 class="download-title">Download Today!</h2>
+        <p class="download-subtitle">
+          Join the color puzzle adventure that’s taking over screens!
+        </p>
+        <p class="download-text">
+          Whether you have just a few minutes or want to dive into dozens of
+          levels, this game adapts to your mood. With easy-to-learn mechanics
+          and endless room to master your skills, Color Rush Mania is the
+          perfect match for puzzle lovers of all ages.
+        </p>
+        <div class="download-btn-wrapper">
+          <a
+            class="download-btn"
+            href="#home"
+            rel="noopener noreferrer"
+            title="Download the game Color Rush Mania on Google Play"
+            aria-label="Download the game Color Rush Mania on Google Play"
+          >
+            <picture>
+              <source
+                srcset="/color-rush-mania/assets/hero-download-desk-e280ceaf.png "
+                media="(min-width: 1440px)"
+                width="221"
+                height="68"
+              />
+              <source
+                srcset="/color-rush-mania/assets/hero-download-mob-9e3c9923.png "
+                width="171"
+                height="52"
+              />
+              <img
+                class="download-google-play-img"
+                src="/color-rush-mania/assets/hero-download-mob-9e3c9923.png"
+                alt="Google Play button"
+                width="171"
+                height="52"
+              />
+            </picture>
+          </a>
+        </div>
+      </div>
+      <picture>
+        <source
+          srcset="/color-rush-mania/assets/download-bg-desk-ccb3eaec.png "
+          media="(min-width: 1440px)"
+          width="526"
+          height="414"
+        />
+        <source
+          srcset="/color-rush-mania/assets/download-bg-mob-2b1504e5.png "
+          width="335"
+          height="316"
+        />
+        <img
+          class="download-bg-img"
+          src="/color-rush-mania/assets/download-bg-mob-2b1504e5.png"
+          alt="Puzzle"
+          width="335"
+          height="316"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <div class="footer-list">
+        <div class="footer-list-item">
+          <a class="footer-link" href="./cookies-policy.html">Cookies Policy</a>
+        </div>
+        <div class="footer-list-item-desk">/</div>
+        <div class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-list-item-desk">/</div>
+        <div class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms and Conditions</a
+          >
+        </div>
+      </div>
+    </nav>
+    <p class="footer-text">All rights reserved blogxu.online | 2025</p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <button
+    class="cookie-close-btn"
+    id="cookie-close-btn"
+    aria-label="Close cookie banner"
+  >
+    <svg class="cookie-close-icon" width="36" height="36">
+      <use href="/color-rush-mania/assets/sprite-8e3c0b15.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <p class="cookie-banner-text">
+    We use cookies to improve your experience on our website. By browsing this
+    website, you agree to our use of cookies.
+  </p>
+  <div class="cookie-banner-buttons">
+    <button class="cookie-decline-btn" id="cookie-decline">
+      DECLINE COOKIES
+    </button>
+    <button class="cookie-accept-btn" id="cookie-accept">ACCEPT COOKIES</button>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
