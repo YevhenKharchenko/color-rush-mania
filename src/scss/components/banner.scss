@@ -1,5 +1,5 @@
 .cookie-banner-section {
-  background: #fff;
+  background: linear-gradient(180deg, #2a003f 0%, #5700a3 100%);
   padding: 36px 20px;
   width: 100%;
   max-width: 357px;
@@ -33,11 +33,11 @@
 }
 
 .cookie-banner-text {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
-  color: #1e1e1e;
+  color: #fff;
   margin-bottom: 42px;
 
   @include media(desktop) {
@@ -62,14 +62,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #1e1e1e;
+  border: 3px solid #fff;
   padding: 8px 24px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
-  color: #1e1e1e;
+  color: #fff;
   width: 100%;
   max-width: 156px;
 
@@ -84,14 +84,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #c31162;
+  background: linear-gradient(180deg, #0f8 0%, #00c96b 100%);
   padding: 11px 24px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
+  color: #1e1e1e;
   width: 100%;
   max-width: 153px;
 
