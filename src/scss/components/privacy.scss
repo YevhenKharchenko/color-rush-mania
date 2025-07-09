@@ -9,11 +9,11 @@
 }
 
 .policy-title {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 1.5;
-  color: #1e1e1e;
+  color: #fff;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -23,11 +23,11 @@
 }
 
 .policy-subtitle {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.5;
-  color: #1e1e1e;
+  color: #fff;
   margin-bottom: 1em;
 
   @include media(desktop) {
@@ -40,7 +40,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #1e1e1e;
+  color: #fff;
 
   &:not(:last-child) {
     margin-bottom: 1em;

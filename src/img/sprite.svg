@@ -18,5 +18,8 @@
     <symbol id="icon-right-arrow" viewBox="0 0 32 32">
       <path d="m16.762 15.613-5.841-5.841 1.778-1.778 7.619 7.619-7.619 7.619-1.778-1.778 5.841-5.841z"/>
     </symbol>
+    <symbol id="icon-back-arrow" viewBox="0 0 24 24">
+      <path d="M14 18L8 12L14 6L15.4 7.4L10.8 12L15.4 16.6L14 18Z" fill="#1E1E1E" />
+    </symbol>
   </defs>
 </svg>

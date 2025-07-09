@@ -43,10 +43,10 @@ html {
 }
 
 .section {
-  scroll-margin-top: 56px;
+  scroll-margin-top: 50px;
 
   @include media(desktop) {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 80px;
   }
 }
 
@@ -57,23 +57,28 @@ html {
   line-height: 1.5;
   text-align: center;
   color: #fff;
-  padding: 16px 20px;
+  padding: 8px 16px;
   border-radius: 50px;
-  margin-top: -40px;
-  margin-bottom: 24px;
-  max-width: max-content;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
 
   @include media(desktop) {
+    top: -58px;
+    padding: 16px 24px;
     font-size: 48px;
-    margin-top: -56px;
-    margin-bottom: 40px;
   }
 }
 
 .section-bg-wrapper {
   border: 6px solid #fff;
   border-radius: 40px;
-  padding: 0 40px 40px 40px;
+  padding: 50px 18px 18px 18px;
+  position: relative;
+
+  @include media(desktop) {
+    padding: 92px 40px 40px 40px;
+  }
 }
